@@ -11,7 +11,7 @@ body {
     height: 100%;
 }
 
-.game {
+.container {
     align-items: center;
     align-content: center;
     background-color: #223552;
@@ -19,17 +19,17 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 5% auto auto auto;
-    padding: 20px;
+    margin: 10% auto;
+    padding: 20px 40px;
     flex-wrap: wrap;
-    width: 25em;
+    width: fit-content;
 }
 
-.game > h1 {
+.container > h1 {
     color: #ffbb00;
 }
 
-.game > .values {
+.container > .values {
     align-items: center;
     align-content: center;
     display: flex;
@@ -38,7 +38,7 @@ body {
     justify-content: center;
 }
 
-.game > .values > h2 {
+.container > .values > h2 {
     color: #ffffff;
     cursor: default;
     font-size: 10vh;
@@ -47,7 +47,7 @@ body {
     margin-right: 2%;
 }
 
-.game > .answer > .forms > button {
+.container > .answer > #forms > button {
     background-color: #ffbb00;
     color: #0a254d;
     cursor: pointer;
@@ -55,19 +55,19 @@ body {
     transition: 0.4s;
 }
 
-.game > .answer > .forms > button:hover {
+.container > .answer > #forms > button:hover {
     background-color: #ffdc7c;
     transition: 0.4s;
 }
 
-.game > .answer > .forms > input {
+.container > .answer > #forms > input {
     background-color: #ffffff;
     color: #0a254d;
     cursor: text;
     width: 50px;
 }
 
-.forms > button, .forms > input {
+#forms > button, #forms > input {
     border: none;
     font-size: 18px;
     margin-top: 20px;

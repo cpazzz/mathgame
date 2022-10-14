@@ -25,8 +25,8 @@ body {
     animation-name: logo;
     animation-duration: 4s;
     animation-iteration-count: infinite;
-    height: 50%;
-    width: 50%;
+    height: 350px;
+    width: 350px;
 }
 
 @keyframes logo {

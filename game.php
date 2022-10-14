@@ -23,7 +23,6 @@
         $value_1 = rand(1, 150);
         $value_2 = rand(1, 50);
     }
-
 ?>
 
 <!DOCTYPE html>
@@ -41,12 +40,9 @@
 </head>
 
 <body>
-
-
-    <div class="game">
-
+    
+    <div class="container">
         <h1> How much is? </h1>
-
         <div class="values">
             <h2><?=$value_1?></h2>
             <h2><?=$operation?></h2>
@@ -54,14 +50,11 @@
         </div>
 
         <div class="answer">
-
-            <form class="forms" method="POST" action="/result.php?v1=<?=$value_1?>&v2=<?=$value_2?>&op=<?=$operation_value?>&d=<?=$difficulty?>&s=<?=$score?>">
-                <input type="number" name="resp">
+            <form id="forms" method="POST" action="/result.php?v1=<?=$value_1?>&v2=<?=$value_2?>&op=<?=$operation_value?>&d=<?=$difficulty?>&s=<?=$score?>">
+                <input type="text" name="resp">
                 <button type="submit"> Submit </button>
             </form>
-
         </div>
-
     </div>
 
 </body>
