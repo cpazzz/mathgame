@@ -41,15 +41,15 @@
 
 <body>
     
-    <div class="container">
+    <div id="game_container">
         <h1> How much is? </h1>
-        <div class="values">
+        <div id="game_values">
             <h2><?=$value_1?></h2>
             <h2><?=$operation?></h2>
             <h2><?=$value_2?></h2>
         </div>
 
-        <div class="answer">
+        <div id="game_answer">
             <form id="forms" method="POST" action="/result.php?v1=<?=$value_1?>&v2=<?=$value_2?>&op=<?=$operation_value?>&d=<?=$difficulty?>&s=<?=$score?>">
                 <input type="text" name="resp">
                 <button type="submit"> Submit </button>

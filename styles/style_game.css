@@ -8,69 +8,83 @@
 
 body {
     background-color: #5792ff;
-    height: 100%;
 }
 
-.container {
+#game_container {
     align-items: center;
-    align-content: center;
-    background-color: #223552;
-    border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 10% auto;
-    padding: 20px 40px;
-    flex-wrap: wrap;
+
+    background-color: #223552;
+    border-radius: 10px;
+
+    left: 50%;
+    top: 40%;
+    position: absolute;
+    transform: translate(-50%, -40%);
+
+    padding: 5%;
     width: fit-content;
 }
 
-.container > h1 {
+#game_container>h1 {
     color: #ffbb00;
+    font-size: 30px;
+
+    width: max-content;
 }
 
-.container > .values {
+#game_values {
     align-items: center;
-    align-content: center;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
     justify-content: center;
 }
 
-.container > .values > h2 {
+#game_values>h2 {
     color: #ffffff;
     cursor: default;
-    font-size: 10vh;
+    font-size: 80px;
     font-weight: 200;
+
     margin-left: 2%;
     margin-right: 2%;
 }
 
-.container > .answer > #forms > button {
+#game_answer>#forms {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#forms>button {
     background-color: #ffbb00;
     color: #0a254d;
     cursor: pointer;
-    width: 200px;
     transition: 0.4s;
+
+    width: 200px;
 }
 
-.container > .answer > #forms > button:hover {
+#forms>button:hover {
     background-color: #ffdc7c;
     transition: 0.4s;
 }
 
-.container > .answer > #forms > input {
+#forms>input {
     background-color: #ffffff;
     color: #0a254d;
     cursor: text;
+
     width: 50px;
 }
 
-#forms > button, #forms > input {
+#forms>button, #forms>input {
     border: none;
     font-size: 18px;
+    text-align: center;
+
     margin-top: 20px;
     padding: 10px;
-    text-align: center;
 }

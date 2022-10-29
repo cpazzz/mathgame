@@ -16,24 +16,23 @@
     <title> MathGame </title>
 </head>
 
-<body>
+<body>  
 
-    <div class="home">
-        <img src="media/icon-logo.png" alt="game_logo">
-        <h1> MathGame! </h1>
+    <div id="home_container">
+        <div id="home_logo">
+            <img src="media/icon-logo.png" alt="game_logo">
+            <h1> MathGame! </h1>
+        </div>
+
+        <section id="home_options">
+            <h1> Choose difficulty: </h1>
+            <ul>
+                <li><a href="/game.php?d=e&s=<?=$score?>"> Easy </a></li>
+                <li><a href="/game.php?d=m&s=<?=$score?>"> Medium </a></li>
+                <li><a href="/game.php?d=h&s=<?=$score?>"> Hard </a></li>
+            </ul>
+        </section>
     </div>
-
-    <section class="options">
-
-        <h1> Choose difficulty: </h1>
-
-        <ul>
-            <li><a href="/game.php?d=e&s=<?=$score?>"> Easy </a></li>
-            <li><a href="/game.php?d=m&s=<?=$score?>"> Medium </a></li>
-            <li><a href="/game.php?d=h&s=<?=$score?>"> Hard </a></li>
-        </ul>
-
-    </section>
 
 </body>
 

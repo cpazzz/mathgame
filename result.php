@@ -48,23 +48,19 @@
     <?php if($win) { $score = $score + 1; ?>
 
     <div class="result">
-
         <img class="logo" src="media/icon-correct.png" alt="icon_victory">
         <h1> Nice! </h1>
         <h3> Score: <?=$score?> </h3>
         <a href="/game.php?s=<?=$score?>&d=<?=$difficulty?>"> Next > </a>
-
     </div>
 
     <?php } else { ?>
 
     <div class="result">
-
         <img src="media/icon-defeat.png" alt="icon_defeat">
         <h1> So close, the answer was <?=$result?> </h1>
         <h3> Score: <?=$score?> </h3>
         <a href="/"> Game over... </a>
-
     </div>
 
     <?php } ?>
